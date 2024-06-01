@@ -31,9 +31,9 @@ const USE_GOOGLE_ANALYTICS = false;
 const GOOGLE_ANALYTICS_TRACKING_ID = '';
 
 // styling: set to `true` if you want dash-line route
-const USE_DASH_LINE = true;
+const USE_DASH_LINE = false;
 // styling: route line opacity: [0, 1]
-const LINE_OPACITY = 0.4;
+const LINE_OPACITY = 0.6;
 // styling: map height
 const MAP_HEIGHT = 600;
 //set to `false` if you want to hide the road label characters
@@ -51,7 +51,7 @@ const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   return `我用 App 记录自己跑步 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
 };
 const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
-  `Running Journey with ${yearLength} Years, the table shows year ${year} data`;
+  `Journey with ${yearLength} years, the table shows year ${year} data`;
 
 // not support English for now
 const CHINESE_LOCATION_INFO_MESSAGE_FIRST =
@@ -59,13 +59,13 @@ const CHINESE_LOCATION_INFO_MESSAGE_FIRST =
 const CHINESE_LOCATION_INFO_MESSAGE_SECOND = '不要停下来，不要停下奔跑的脚步';
 
 const INFO_MESSAGE = IS_CHINESE ? CHINESE_INFO_MESSAGE : ENGLISH_INFO_MESSAGE;
-const FULL_MARATHON_RUN_TITLE = IS_CHINESE ? '全程马拉松' : 'Full Marathon';
-const HALF_MARATHON_RUN_TITLE = IS_CHINESE ? '半程马拉松' : 'Half Marathon';
-const MORNING_RUN_TITLE = IS_CHINESE ? '清晨跑步' : 'Morning Run';
-const MIDDAY_RUN_TITLE = IS_CHINESE ? '午间跑步' : 'Midday Run';
-const AFTERNOON_RUN_TITLE = IS_CHINESE ? '午后跑步' : 'Afternoon Run';
-const EVENING_RUN_TITLE = IS_CHINESE ? '傍晚跑步' : 'Evening Run';
-const NIGHT_RUN_TITLE = IS_CHINESE ? '夜晚跑步' : 'Night Run';
+const FULL_MARATHON_RUN_TITLE = IS_CHINESE ? '全程马拉松' : '42 km Activity';
+const HALF_MARATHON_RUN_TITLE = IS_CHINESE ? '半程马拉松' : '21 km Activity';
+const MORNING_RUN_TITLE = IS_CHINESE ? '清晨跑步' : 'Morning Activity';
+const MIDDAY_RUN_TITLE = IS_CHINESE ? '午间跑步' : 'Midday Activity';
+const AFTERNOON_RUN_TITLE = IS_CHINESE ? '午后跑步' : 'Afternoon Activity';
+const EVENING_RUN_TITLE = IS_CHINESE ? '傍晚跑步' : 'Evening Activity';
+const NIGHT_RUN_TITLE = IS_CHINESE ? '夜晚跑步' : 'Night Activity';
 
 const RUN_TITLES = {
   FULL_MARATHON_RUN_TITLE,
